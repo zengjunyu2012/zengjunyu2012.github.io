@@ -1,20 +1,29 @@
+<!-- ------------------------------------------name and type-------------------------------------------------- -->
 <html>
-  <h1>猜数游戏</h1>
-  <h2>请您数入一个1到100的数字，看看你几次能猜中！</h2>
-
   <body>
-
-        <th>
-          <form action="demo-form.php">
-            <h6>输入你的数</h6> <input type="number" name="quantity" min="1" max="100">
-            <input type="submit">
-          </form>
-        </th>
-      <input type="checkbox" name="vehicle" value="Bike">显示详细情况<br>
-      <h2>你猜了n次</h2>
-      <table border="0" align = "center" width = 100%>
-               <h5>
-            <tr> <th align="left">89</th><th align="left">太大了</th>  </tr>
+    <head>
+      <meta charset="utf-8">
+      <title>猜数游戏</title>
+    </head>
+<!-- ---------------------------------------------div------------------------------------------------------- -->
+<div id="container" style="width:500px">
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">猜数</h1>
+</div>
+<div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+<b>请您数入一个1到100的数字，看看你几次能猜中！</b>
+</div>
+<div id="content" style="background-color:#00BFFF;height:200px;width:400px;float:left;">
+<form action="demo-form.php">
+<h6>输入你的数</h6>
+<input type="number" name="quantity" min="1" ma="100">
+<input type="submit">
+</form>
+</div>
+</div>
+<!-- ---------------------------------------------表格--------------------------------------------------------- -->
+               <!-- <h5>
+          <tr>   <th align="left">89</th><th align="left">太大了</th>  </tr>
           <tr>   <th align="left">80 </th><th align="left">太大了</th>  </tr>
           <tr>   <th align="left">10 </th><th align="left">太小了</th>  </tr>
           <tr>   <th align="left">38 </th><th align="left">小了</th>  </tr>
@@ -23,9 +32,6 @@
           <tr>   <th align="left">50 </th><th align="left">小了</th>  </tr>
           <tr>   <th align="left">51 </th><th align="left">答对了！！！</th>  </tr>
         </h5>
-
-
-        <p><b>注意:</b>不可以输入字母</p>
-    </table>
+              <p><b>注意:</b>不可以输入字母</p> -->
   </body>
 </html>
