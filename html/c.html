@@ -16,7 +16,7 @@
 <div id="content" style="background-color:#00BFFF;height:200px;width:400px;float:left;">
 <h6>输入你的数</h6>
 <input type="number" name="quantity" min="1" ma="100">
-<input type="submit">
+<button onclick="myFunction()">提交</button>
 </div>
 </div>
 <!-- ---------------------------------------------表格--------------------------------------------------------- -->
@@ -37,42 +37,28 @@ var der = name
 var num = type
 id = damo
 
-for (var i = 0;i < 11;i++) {
-  console.log(i)
-  i = i + 1
+function myFunction(){
+  for (var i = 0;i < 11;i++) {
+    // console.log(i)
+    i = i + 1
 
-var you = name
-function dui():
-{name-type=0
-break;}
-function td():
-{name-30>type
-break;}
-function d():
-{name>type}
-function tx():
-{name+30<type
-break;}
-function x():
-{name<type
-break;}
-switch (you){
-  case :
-  document.getElementById("demo").innerHTML="你答对了，你猜了',i,'次";
+  if (name == type)
+  {document.write("<b>恭喜你,你猜了</b>,i,<b>次</b>");
+  }
   break;
-
-  case :
-  document.getElementById("demo").innerHTML="你猜的太大了";
-
-  case >type:
-  document.getElementById("demo").innerHTML="你猜大了";
-
-  case type->30:
-  document.getElementById("demo").innerHTML="你猜的太小了";
-
-  case <type:
-  document.getElementById("demo").innerHTML="你猜小了";
-
+  else if (name+30 < type)
+  {document.write("<b>你猜的太小了</b>")
+  }
+  else if (name < type)
+  {document.write("<b>你猜小了</b>")
+  }
+  else if (name-30 > type)
+  {document.write("<b>你猜的太大了</b>")
+  }
+  else
+  {document.write("<b>你猜大了</b>")
+  }
+  }
 }
 </script>
   </body>
