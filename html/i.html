@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟猜数</title>
+<script>
+function displayDate(){
+	i = document.getElementById("hanshu").value;
+	document.getElementById("demo").innerHTML+="<p>" + i + "太大了" + "</p>";
+}
+</script>
+<input type="number" name="quantity" min="1" ma="100" id = "hanshu">
+<button type="button" onclick="displayDate()">提交</button>
+</head>
+<body>
+<p id="demo"></p>
+</body>
+</html>
