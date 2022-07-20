@@ -15,7 +15,8 @@
 </div>
 <div id="content" style="background-color:#00BFFF;height:200px;width:400px;float:left;">
 <h6>输入你的数</h6>
-<input type="number" name="quantity" min="1" ma="100">
+<input type="number" name="quantity" min="1" ma="100" id = "hanshu">
+<button type="button" onclick="displayDate()">提交</button>
 
 </div>
 </div>
@@ -35,11 +36,7 @@
 <script>
   var der = name
   var num = type
-  <input type="number" name="quantity" min="1" ma="100" id = "hanshu">
-  <button type="button" onclick="displayDate()">提交</button>
-  <button type="button"></button>
   <p id="demo"></p>
-
 function myFunction(){
   for (var i = 0;i < 11;i++) {
     // console.log(i)
@@ -48,7 +45,6 @@ function myFunction(){
   if (name == type)
   {	i = document.getElementById("hanshu").value;
 	document.getElementById("demo").innerHTML+="<p>" + i + "太大了" + "</p>";
-;
   }
   break;
   else if (name+30 < type)
@@ -58,17 +54,15 @@ function myFunction(){
   else if (name < type)
   {	i = document.getElementById("hanshu").value;
 	document.getElementById("demo").innerHTML+="<p>" + i + "太大了" + "</p>";
-
   }
   else if (name-30 > type)
   {	i = document.getElementById("hanshu").value;
 	document.getElementById("demo").innerHTML+="<p>" + i + "太大了" + "</p>";
-
   }
   else
   {	i = document.getElementById("hanshu").value;
 	document.getElementById("demo").innerHTML+="<p>" + i + "太大了" + "</p>";
-
+  }
 }
 </script>
   </body>
