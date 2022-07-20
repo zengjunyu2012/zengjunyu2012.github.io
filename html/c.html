@@ -16,7 +16,7 @@
 <div id="content" style="background-color:#00BFFF;height:200px;width:400px;float:left;">
 <h6>输入你的数</h6>
 <input type="number" name="quantity" min="1" ma="100">
-<button type="button"></button>
+
 </div>
 </div>
 <!-- ---------------------------------------------表格--------------------------------------------------------- -->
@@ -35,7 +35,9 @@
 <script>
 var der = name
 var num = type
-id = damo
+<input type="number" name="quantity" min="1" ma="100" id = "hanshu">
+<button type="button" onclick="displayDate()">提交</button>
+<button type="button"></button>
 
 function myFunction(){
   for (var i = 0;i < 11;i++) {
@@ -43,21 +45,20 @@ function myFunction(){
     i = i + 1
 
   if (name == type)
-  {document.write("<b>恭喜你,你猜了</b>,i,<b>次</b>");
+  {	document.getElementById("hanshu").innerHTML+="<p>你猜对了</p>";
   }
   break;
   else if (name+30 < type)
-  {document.write("<b>你猜的太小了</b>")
+  {	document.getElementById("hanshu").innerHTML+="<p>你猜的太小了</p>";
   }
   else if (name < type)
-  {document.write("<b>你猜小了</b>")
+  {	document.getElementById("hanshu").innerHTML+="<p>你猜小了</p>";
   }
   else if (name-30 > type)
-  {document.write("<b>你猜的太大了</b>")
+  {	document.getElementById("hanshu").innerHTML+="<p>你猜的太大了</p>";
   }
   else
-  {document.write("<b>你猜大了</b>")
-  }
+  {	document.getElementById("hanshu").innerHTML+="<p>太大了</p>";
   }
 }
 </script>
