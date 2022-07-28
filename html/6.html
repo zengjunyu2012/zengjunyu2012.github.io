@@ -5,18 +5,31 @@
 <title>测试实例</title>
 <p id="demo"></p>
 <script>
+x = random.randint(1,100)
 function myFunction()
 {
     alert("我是一个半成品");
-    var arg,voteable,i;
-    arg = document.getElementById("demo").value;
-    for (var i = 0;i < 11;i++){
-      i = i + 1;
-    }
-    return i;
-    voteable=(age==hanshu)?"你猜对了，你猜了‘i’次";
-    return hanshu;
+    var arg,x;
+    arg = document.getElementById("hanshu").value;
+    if (hanshu == x){
+      alert("你猜对了，你猜了",i,"次")
+      }
+      break;
+      else if (name+30 < type) {
+         alert("<p>" + i + "太大了" + "</p>");
+      }
+      else if (name < type) {
+         alert("<p>" + i + "太大了" + "</p>");
+      }
+      else if (name-30 > type) {
+         alert("<p>" + i + "太大了" + "</p>");
+      }
+      else {
+         alert("<p>" + i + "太大了" + "</p>");
+      }
 }
+    // voteable=(age==hanshu)?"你猜对了，你猜了‘i’次";
+    // return hanshu;
 </script>
 </head>
 
