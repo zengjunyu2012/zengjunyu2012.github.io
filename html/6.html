@@ -23,9 +23,21 @@
 x = random.randint(1,100)
 function myFunction()
 {
+      if (hanshu < x)
+      {
+        alert("你猜小了")
+      }
+      else if (hanshu > x)
+      {
+        alert("你猜大了")
+      }
+      else
+      {
+        break;
+      }
       hanshu = document.getElementById("hanshu").value;
       alert(hanshu)
-  // for (var i = 0;i < 11;i++)
+  // for (i = 0;i < 11;i++)
   // {
   //   i = i + 1
   //   var age,voteable,taida,v,da,o,taixiao,t,xiao,e;
