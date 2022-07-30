@@ -23,8 +23,58 @@
 x = random.randint(1,100)
 function myFunction()
 {
-      hanshu = document.getElementById("hanshu").value;
-      alert(hanshu)
+  l = document.getElementById("demo").value;
+  try
+  {
+    if(y == "") throw "值是空的";
+    if(isNaN(y)) throw "值不是一个数字";
+    x1 = Number(y);
+    if(hanshu == x) throw "对";
+    // if(hanshu + 30 < x) throw "太大";
+    if(hanshu < x) throw "小";
+    // if(hanshu - 30 > x) throw "太小";
+    if(hanshu > x) throw "大";
+    }
+    catch(err)
+    {
+    message.innerHTML = "错误: " + err + ".";
+    }
+    finally
+    {
+    document.getElementById("demo").value = "";
+    }
+}
+// hanshu = document.getElementById("hanshu").value;
+// alert(hanshu)
+      // var l = "",i = 0
+      // while (i == 11)
+      // {
+      //   if (hanshu == x)
+      //   {
+      //     l = l + "你猜对了，你猜了" + i + "次" + "<br>";
+      //     alert(l)
+      //     break;
+      //   }
+      //   else if (hanshu + 30 < x)
+      //   {
+      //     l = l + "你猜的太小了"
+      //     alert(l)
+      //   }
+      //   else if (hanshu < x)
+      //   {
+      //     l = l + "你猜小了"
+      //     alert(l)
+      //   }
+      //   else if (hanshu - 30 > x)
+      //   {
+      //     l = l + "你猜的太大了"
+      //     alert(l)
+      //   }
+      //   else
+      //   {
+      //     l = l + "你猜大了"
+      //     alert(l)
+      //   }
   // for (var i = 0;i < 11;i++)
   // {
   //   i = i + 1
