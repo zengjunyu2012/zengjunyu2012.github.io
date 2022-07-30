@@ -23,21 +23,59 @@
 x = random.randint(1,100)
 function myFunction()
 {
-      if (hanshu < x)
-      {
-        alert("你猜小了")
-      }
-      else if (hanshu > x)
-      {
-        alert("你猜大了")
-      }
-      else
-      {
-        break;
-      }
+  l = document.getElementById("demo").value;
+  try
+  {
+    if(x == "") throw "值是空的";
+    if(isNaN(x)) throw "值不是一个数字";
+    x = Number(x);
+    if(hanshu == x) throw "对";
+    // if(hanshu + 30 < x) throw "太大";
+    if(hanshu < x) throw "小";
+    // if(hanshu - 30 > x) throw "太小";
+    if(hanshu > x) throw "大";
+    }
+    catch(err)
+    {
+    message.innerHTML = "错误: " + err + ".";
+    }
+    finally
+    {
+    document.getElementById("demo").value = "";
+    }
+}
+      // var l = "",i = 0
+      // while (i == 11)
+      // {
+      //   if (hanshu == x)
+      //   {
+      //     l = l + "你猜对了，你猜了" + i + "次" + "<br>";
+      //     alert(l)
+      //     break;
+      //   }
+      //   else if (hanshu + 30 < x)
+      //   {
+      //     l = l + "你猜的太小了"
+      //     alert(l)
+      //   }
+      //   else if (hanshu < x)
+      //   {
+      //     l = l + "你猜小了"
+      //     alert(l)
+      //   }
+      //   else if (hanshu - 30 > x)
+      //   {
+      //     l = l + "你猜的太大了"
+      //     alert(l)
+      //   }
+      //   else
+      //   {
+      //     l = l + "你猜大了"
+      //     alert(l)
+      //   }
       hanshu = document.getElementById("hanshu").value;
       alert(hanshu)
-  // for (i = 0;i < 11;i++)
+  // for (var i = 0;i < 11;i++)
   // {
   //   i = i + 1
   //   var age,voteable,taida,v,da,o,taixiao,t,xiao,e;
