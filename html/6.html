@@ -13,93 +13,17 @@
 </div>
 <div id="content" style="background-color:#00BFFF;height:100%;width:50%;float:left;">
 <h6>输入你的数</h6>
-<input type="number" name="quantity" min="1" ma="100" id = "hanshu" value = "50">
+数字:<input type="number" name="quantity" min="1" ma="100" id = "hanshu" value = "50">
 <button onclick="myFunction()">提交</button>
-
 </div>
 </div>
-<p id = "demo"></p>
+<p id = "bijiao"></p>
 <script>
-x = 30// random.randint(1,100)
 function myFunction()
 {
-  l = document.getElementById("demo").value;
-  try
-  {
-    if(y == "") throw "值是空的";
-    if(isNaN(y)) throw "值不是一个数字";
-    x1 = Number(y);
-    if(hanshu == x) throw "对";
-    // if(hanshu + 30 < x) throw "太大";
-    if(hanshu < x) throw "小";
-    // if(hanshu - 30 > x) throw "太小";
-    if(hanshu > x) throw "大";
-    }
-    catch(err)
-    {
-    message.innerHTML = "错误: " + err + ".";
-    }
-    finally
-    {
-    document.getElementById("demo").value = "";
-    }
-}
-      // var l = "",i = 0
-      // while (i == 11)
-      // {
-      //   if (hanshu == x)
-      //   {
-      //     l = l + "你猜对了，你猜了" + i + "次" + "<br>";
-      //     alert(l)
-      //     break;
-      //   }
-      //   else if (hanshu + 30 < x)
-      //   {
-      //     l = l + "你猜的太小了"
-      //     alert(l)
-      //   }
-      //   else if (hanshu < x)
-      //   {
-      //     l = l + "你猜小了"
-      //     alert(l)
-      //   }
-      //   else if (hanshu - 30 > x)
-      //   {
-      //     l = l + "你猜的太大了"
-      //     alert(l)
-      //   }
-      //   else
-      //   {
-      //     l = l + "你猜大了"
-      //     alert(l)
-      //   }
       hanshu = document.getElementById("hanshu").value;
-      alert(hanshu)
-  // for (var i = 0;i < 11;i++)
-  // {
-  //   i = i + 1
-  //   var age,voteable,taida,v,da,o,taixiao,t,xiao,e;
-  //   age = document.getElementById.value
-  //   voteable = (value == x)"恭喜你，你猜了",i,"次"
-  //   document.getElementById("demo").alertvoteable;
-  //   taida = document.getElementById.value
-  //   v = (value-30 > x)"你猜的太大了"
-  //   document.getElementById("demo").alert(v);
-  //   da = document.getElementById.value
-  //   o = (value > x)"你猜大了"
-  //   document.getElementById("demo").alert(o);
-  //   taixiao = document.getElementById.value
-  //   t = (value+30 < x)"你猜的太小了"
-  //   document.getElementById("demo").alert(t);
-  //   xiao = document.getElementById.value
-  //   e = (value < x)"你猜小了"
-  //   document.getElementById("demo").alert(e);
-  // }
-  // alert("你失败了")
-}
-
-    // voteable=(age==value)?"你猜对了，你猜了‘i’次";
-    // return value;
+      aleat(hanshu)
+  }
 </script>
 </head>
 </body>
