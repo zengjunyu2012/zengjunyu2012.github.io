@@ -1,54 +1,9 @@
-<!-- ------------------------------------------name and type-------------------------------------------------- -->
 <html>
-  <body>
-    <head>
-      <meta charset="utf-8">
-      <title>猜数游戏</title>
-    </head>
-<!-- ---------------------------------------------表格--------------------------------------------------------- -->
-               <!-- <h5>
-          <tr>   <th align="left">89</th><th align="left">太大了</th>  </tr>
-          <tr>   <th align="left">80 </th><th align="left">太大了</th>  </tr>
-          <tr>   <th align="left">10 </th><th align="left">太小了</th>  </tr>
-          <tr>   <th align="left">38 </th><th align="left">小了</th>  </tr>
-          <tr>   <th align="left">60 </th><th align="left">大了</th>  </tr>
-          <tr>   <th align="left">55 </th><th align="left">大了</th>  </tr>
-          <tr>   <th align="left">50 </th><th align="left">小了</th>  </tr>
-          <tr>   <th align="left">51 </th><th align="left">答对了！！！</th>  </tr>
-        </h5>
-              <p><b>注意:</b>不可以输入字母</p> -->
-<!-- ---------------------------------------------dl---------------------------------------------------------- -->
-<p id="demo"></p>
-<script>
-  // var der = name
-  // var num = type
-  // function myFunction(){
-  //   for (var i = 0;i < 11;i++) {
-  //     // console.log(i)
-  //     i = i + 1
-  //     a = document.getElementById("hanshu").value;
-  //     if (name == type) {
-  //        alert("<p>" + i + "太大了" + "</p>");
-  //     }
-  //     break;
-  //     else if (name+30 < type) {
-  //        alert("<p>" + i + "太大了" + "</p>");
-  //     }
-  //     else if (name < type) {
-  //        alert("<p>" + i + "太大了" + "</p>");
-  //     }
-  //     else if (name-30 > type) {
-  //        alert("<p>" + i + "太大了" + "</p>");
-  //     }
-  //     else {
-  //        alert("<p>" + i + "太大了" + "</p>");
-  //     }
-  //   }
-        hanshu = document.getElementById("hanshu").value;
-        alert(hanshu)
-  }
-</script>
-<!-- ---------------------------------------------div------------------------------------------------------- -->
+<body>
+<head>
+<meta charset="utf-8">
+<title>猜数游戏</title>
+</head>
 <div id="container" style="width:100%">
 <div id="header" style="background-color:#FFA500;">
 <h1 style="margin-bottom:0;clear:both;text-align:center;">猜数</h1>
@@ -63,5 +18,13 @@
 
 </div>
 </div>
-  </body>
+<p id = "bijiao"></p>
+<script>
+function myFunction()
+{
+      hanshu = document.getElementById("hanshu").value;
+      alert(hanshu)
+}
+</script>
+</body>
 </html>
