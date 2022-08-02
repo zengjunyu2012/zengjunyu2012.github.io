@@ -25,9 +25,16 @@ function myFunction()
       // hanshu = document.getElementById("hanshu").value;
       // alert(hanshu)
       x = random.randint(1,100);
-      document.getElementById("x");
       shu = document.getElementById("shuzi").value;
       d = (shu = x)"你猜对了";
+      document.getElementById("bijiaojieguo").inner = "你猜对了"
+      shu = document.getElementById("shuzi").value;
+      a = (shu > x)"你猜大了";
+      document.getElementById("bijiaojieguo").inner = "你猜大了"
+      shu = document.getElementById("shuzi").value;
+      i = (shu < x)"你猜小了";
+      document.getElementById("bijiaojieguo").inner = "你猜小了"
+
 }
 </script>
 </body>
