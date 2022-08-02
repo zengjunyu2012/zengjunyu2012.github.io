@@ -3,22 +3,6 @@
 <head>
 <meta charset="utf-8">
 <title>猜数游戏</title>
-</head>
-<div id="container" style="width:100%">
-<div id="header" style="background-color:#FFA500;">
-<h1 style="margin-bottom:0;clear:both;text-align:center;">猜数</h1>
-</div>
-<div id="menu" style="background-color:#FFD700;height:100%;width:50%;float:left;">
-<b>请您数入一个1到100的数字，看看你几次能猜中！</b>
-</div>
-<div id="content" style="background-color:#00BFFF;height:100%;width:50%;float:left;">
-<h6>输入你的数</h6>
-<input type="number" name="quantity" min="1" ma="100" id = "shuzi" value="50">
-<button onclick="myFunction()">提交</button>
-
-</div>
-</div>
-<p id = "bijiaojieguo"></p>
 <script>
 function myFunction()
 {
@@ -37,5 +21,21 @@ function myFunction()
 
 }
 </script>
+</head>
+<div id="container" style="width:100%">
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;clear:both;text-align:center;">猜数</h1>
+</div>
+<div id="menu" style="background-color:#FFD700;height:100%;width:50%;float:left;">
+<b>请您数入一个1到100的数字，看看你几次能猜中！</b>
+</div>
+<div id="content" style="background-color:#00BFFF;height:100%;width:50%;float:left;">
+<h6>输入你的数</h6>
+<input type="number" name="quantity" min="1" ma="100" id = "shuzi" value="50">
+<button onclick="myFunction()">提交</button>
+
+</div>
+</div>
+<p id = "bijiaojieguo"></p>
 </body>
 </html>
