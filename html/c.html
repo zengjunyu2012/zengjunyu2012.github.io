@@ -30,24 +30,24 @@ function myFunction()
         shu = document.getElementById("shuzi").value;
         if (shu == x)
         {
-          document.getElementById("bijiaojieguo").inner = "你猜对了","你猜了",i,"次";
+          alert("你猜对了","你猜了",i,"次")
           break;
         }
         else if (shu - 30 > x)
         {
-          document.getElementById("bijiaojieguo").inner = "你猜的太大了";
+          alert("你猜的太大了")
         }
         else if (shu > x)
         {
-          document.getElementById("bijiaojieguo").inner = "你猜大了";
+          alert("你猜大了")
         }
         else if (shu + 30 < x)
         {
-          document.getElementById("bijiaojieguo").inner = "你猜的太小了";
+          alert("你猜的太小了")
         }
         else
         {
-          document.getElementById("bijiaojieguo").inner = "你猜小了";
+          alert("你猜小了")
         }
         return bijiaojieguo
       }
