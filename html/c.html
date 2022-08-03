@@ -3,24 +3,6 @@
 <head>
 <meta charset="utf-8">
 <title>猜数游戏</title>
-<script>
-function myFunction()
-{
-      // hanshu = document.getElementById("hanshu").value;
-      // alert(hanshu)
-      x = random.randint(1,100);
-      shu = document.getElementById("shuzi").value;
-      d = (shu = x)"你猜对了";
-      document.getElementById("bijiaojieguo").inner = "你猜对了"
-      shu = document.getElementById("shuzi").value;
-      a = (shu > x)"你猜大了";
-      document.getElementById("bijiaojieguo").inner = "你猜大了"
-      shu = document.getElementById("shuzi").value;
-      i = (shu < x)"你猜小了";
-      document.getElementById("bijiaojieguo").inner = "你猜小了"
-
-}
-</script>
 </head>
 <div id="container" style="width:100%">
 <div id="header" style="background-color:#FFA500;">
@@ -37,5 +19,39 @@ function myFunction()
 </div>
 </div>
 <p id = "bijiaojieguo"></p>
+<script>
+function myFunction()
+{     for (var i,i = i + 1,i < 11)
+      {
+        // hanshu = document.getElementById("hanshu").value;
+        // alert(hanshu)
+        x = random.randint(1,100);
+        shu = document.getElementById("shuzi").value;
+        if (shu = x)
+        {
+          document.getElementById("bijiaojieguo").inner = "你猜对了","你猜了",i,"次";
+          break;
+        }
+        else if (shu - 30 > x)
+        {
+          document.getElementById("bijiaojieguo").inner = "你猜的太大了";
+        }
+        else if (shu > x)
+        {
+          document.getElementById("bijiaojieguo").inner = "你猜大了";
+        }
+        else if (shu + 30 < x)
+        {
+          document.getElementById("bijiaojieguo").inner = "你猜的太小了";
+        }
+        else
+        {
+          document.getElementById("bijiaojieguo").inner = "你猜小了";
+        }
+        return bijiaojieguo
+      }
+
+}
+</script>
 </body>
 </html>
