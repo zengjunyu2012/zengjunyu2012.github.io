@@ -22,16 +22,14 @@
 <script>
 function myFunction()
 {
-      for (var i = 0;i < 11;i++)
-      {
         // hanshu = document.getElementById("hanshu").value;
         // alert(hanshu)
-        x = Math.floor(Math.random() * (1 - 100));
+        i = 1
+        x = 60
         shu = document.getElementById("shuzi").value;
         if (shu == x)
         {
-          alert("你猜对了","你猜了",i,"次")
-          break;
+          document.write("你猜对了")
         }
         else if (shu - 30 > x)
         {
@@ -41,7 +39,7 @@ function myFunction()
         {
           alert("你猜大了")
         }
-        else if (shu + 30 < x)
+        else if (x < 30)
         {
           alert("你猜的太小了")
         }
@@ -49,8 +47,7 @@ function myFunction()
         {
           alert("你猜小了")
         }
-        return bijiaojieguo
-      }
+        i = i + 1
 }
 </script>
 </body>
