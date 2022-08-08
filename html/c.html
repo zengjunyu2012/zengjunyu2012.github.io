@@ -8,7 +8,7 @@
 <div id="header" style="background-color:#FFA500;">
 <h1 style="margin-bottom:0;clear:both;text-align:center;">猜数</h1>
 </div>
-<div id="menu" style="background-color:#FFD700;height:50%;width:100%;float:left;">
+<div id="menu" style="background-color:#FFD700;width:100%;float:left;">
 <h1>请您数入一个1到100的数字，看看你几次能猜中！</h1>
 </div>
 <div id="content" style="background-color:#00BFFF;height:50%;width:100%;float:left;">
@@ -20,12 +20,13 @@
 </div>
 <p id = "bijiaojieguo"></p>
 <script>
-var i = 1,x = 42
+var i = 1;
+var x = 42;
 function myFunction()
 {
         // hanshu = document.getElementById("hanshu").value;
         // alert(hanshu)
-        // shu = document.getElementById("shuzi").value;
+        shu = document.getElementById("shuzi").value;
         // if(shu == x)
         // {
         // throw "你猜对了"
