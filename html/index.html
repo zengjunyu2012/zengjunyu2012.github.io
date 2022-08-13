@@ -14,11 +14,11 @@
 <div id="content" style="background-color:#00BFFF;height:35%;width:100%;float:left;font-size:36px;">
 <h1>输入你的数</h1>
 <input type="number" name="quantity" min = "1" max = "100" id = "shuzi" value="50" style="font-size:50px;width:300px;height:100px;text-align:center">
-<button onclick="myFunction()"style="font-size:50px;color:blue;background-color:pink;text-align:center;">提交</button>
+<button onclick="myFunction()"style="font-size:50px;color:blue;background-color:orange;text-align:center;">提交</button>
 
 </div>
 </div>
-<p id = "bijiaojieguo"></p>
+<p id = "bijiaojieguo" style="font-size:30px;font-fanily:'宋体'">比较结果：</p>
 <script>
 var i = 1;
 var x = Math.floor(Math.random() * 100);
@@ -41,29 +41,28 @@ function myFunction()
         if (shu == x)
         {
           document.write("你猜对了")
-          document.getElementById("bijiaojieguo").innerHTML = '<h1>' + "你猜对了" + '</h1>';
+          document.getElementById("bijiaojieguo").innerHTML = "你猜对了,你猜了" + i + "次";
           document.write("<a href='https://zengjunyu2012.github.io/html/index.html'>返回主页</a>")
-          // document.write("<a href='https://zengjunyu2012.github.io/html/c.html'>猜数游戏</a>")
         }
         else if (shu - 30 > x)
         {
           alert("你猜的太大了")
-          document.getElementById("bijiaojieguo").innerHTML = '<h1>' + "你猜的太大了" + '</h1>';
+          document.getElementById("bijiaojieguo").innerHTML = bijiaojieguo + "你猜的太大了";
         }
         else if (shu > x)
         {
           alert("你猜大了")
-          document.getElementById("bijiaojieguo").innerHTML = '<h1>' + "你猜大了" + '</h1>';
+          document.getElementById("bijiaojieguo").innerHTML = bijiaojieguo + "你猜大了";
         }
         else if (shu + 30 < x)
         {
           alert("你猜的太小了")
-          document.getElementById("bijiaojieguo").innerHTML = '<h1>' + "你猜的太小了" + '</h1>';
+          document.getElementById("bijiaojieguo").innerHTML = bijiaojieguo + "你猜的太小了";
         }
         else
         {
           alert("你猜小了")
-          document.getElementById("bijiaojieguo").innerHTML = '<h1>' + "你猜小了" + '</h1>';
+          document.getElementById("bijiaojieguo").innerHTML = bijiaojieguo + "你猜小了";
         }
         i = i + 1
 }
