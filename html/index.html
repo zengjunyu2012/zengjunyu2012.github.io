@@ -18,7 +18,7 @@
 
 </div>
 </div>
-<p id = "bijiaojieguo" style="font-size:30px;font-fanily:'宋体'">比较结果：</p>
+<p id = "bijiaojieguo" style="font-size:30px;font-fanily:'宋体'"></p>
 <script>
 var i = 1;
 var x = Math.floor(Math.random() * 100);
@@ -41,28 +41,28 @@ function myFunction()
         if (shu == x)
         {
           document.write("你猜对了")
-          document.getElementById("bijiaojieguo").innerHTML = "你猜对了,你猜了" + i + "次";
+          document.getElementById("bijiaojieguo").innerHTML = "你猜对了,你猜了" + 'i' + "次";
           document.write("<a href='https://zengjunyu2012.github.io/html/index.html'>返回主页</a>")
         }
         else if (shu - 30 > x)
         {
           alert("你猜的太大了")
-          document.getElementById("bijiaojieguo").innerHTML = bijiaojieguo + "你猜的太大了";
+          document.getElementById("bijiaojieguo").innerHTML = "你猜的太大了";
         }
         else if (shu > x)
         {
           alert("你猜大了")
-          document.getElementById("bijiaojieguo").innerHTML = bijiaojieguo + "你猜大了";
+          document.getElementById("bijiaojieguo").innerHTML = "你猜大了";
         }
         else if (shu + 30 < x)
         {
           alert("你猜的太小了")
-          document.getElementById("bijiaojieguo").innerHTML = bijiaojieguo + "你猜的太小了";
+          document.getElementById("bijiaojieguo").innerHTML = "你猜的太小了";
         }
         else
         {
           alert("你猜小了")
-          document.getElementById("bijiaojieguo").innerHTML = bijiaojieguo + "你猜小了";
+          document.getElementById("bijiaojieguo").innerHTML = "你猜小了";
         }
         i = i + 1
 }
