@@ -1,23 +1,33 @@
-<script language="javascript"type="javascript">
 var i = 1;
 var x = Math.floor(Math.random() * 100);
 var fanhuizhuye = "你猜对了,你猜了" + i + "次";
 function myFunction()
-{if (shu == x){
-  // document.write("你猜对了")
-  document.getElementById("bijiaojieguo").innerHTML = fanhuizhuye;
-  document.write("<a href='https://zengjunyu2012.github.io/html/index.html'>返回主页</a>")
-}else if (shu - 30 > x){
-  // alert("你猜的太大了")
-  document.getElementById("bijiaojieguo").innerHTML = "你猜的太大了";
-}else if (shu > x){
-  // alert("你猜大了")
-  document.getElementById("bijiaojieguo").innerHTML = "你猜大了";
-}else if (shu + 30 < x){
-  // alert("你猜的太小了")
-  document.getElementById("bijiaojieguo").innerHTML = "你猜的太小了";
-}else{
-  // alert("你猜小了")
-  document.getElementById("bijiaojieguo").innerHTML = "你猜小了";
-}i = i + 1;}
-</script>
+{
+  if (shu == x)
+  {
+    // document.write("你猜对了")
+    document.getElementById("bijiaojieguo").innerHTML = fanhuizhuye;
+    document.write("https://zengjunyu2012.github.io/html/index.html")
+  }
+  else if (shu - 30 > x)
+  {
+    // alert("你猜的太大了")
+    document.getElementById("bijiaojieguo").innerHTML = "你猜的太大了";
+  }
+  else if (shu > x)
+  {
+    // alert("你猜大了")
+    document.getElementById("bijiaojieguo").innerHTML = "你猜大了";
+  }
+  else if (shu + 30 < x)
+  {
+    // alert("你猜的太小了")
+    document.getElementById("bijiaojieguo").innerHTML = "你猜的太小了";
+  }
+  else
+  {
+    // alert("你猜小了")
+    document.getElementById("bijiaojieguo").innerHTML = "你猜小了";
+  }
+  i = i + 1;
+}
