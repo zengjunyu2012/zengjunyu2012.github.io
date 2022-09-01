@@ -4,11 +4,11 @@ function myFunction()
 {
   var shu = document.getElementById("shuzi").value;
   var tag = document.getElementById("bijiaojieguo");
+
   if (shu == x)
   {
     // document.write("你猜对了")
     tag.innerHTML += "<p>" + i + ".你猜对了,你猜了" + i + "次</p>";
-    document.write("https://zengjunyu2012.github.io/html/index.html")
   }
   else if (shu - 30 > x)
   {
