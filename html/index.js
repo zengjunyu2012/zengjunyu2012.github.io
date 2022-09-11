@@ -25,14 +25,31 @@ function myFunction()
     // alert("你猜的太小了")
     tag.innerHTML += "<p>" + i + ".你猜的太小了</p>";
   }
-  else if
+  else
   {
     // alert("你猜小了")
     tag.innerHTML += "<p>" + i + ".你猜小了</p>";
   }
-  else
+  if (shu == 50)
   {
-
+      alert("成功率为50%")
   }
+  else if (shu == 75)
+  {
+      alert("成功率为75%")
+  }
+  else if (shu < 75 and shu > 75)
+  {
+      alert("成功率为90%")
+  }
+  else if (shu < 75)
+  {
+      alert("成功率为99%到100%")
+  }
+  else if (shu > 75)
+  {
+      alert("成功率为90到100%")
+  }
+  else{}
   i = i + 1;
 }
