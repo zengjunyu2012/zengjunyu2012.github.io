@@ -25,10 +25,14 @@ function myFunction()
     // alert("你猜的太小了")
     tag.innerHTML += "<p>" + i + ".你猜的太小了</p>";
   }
-  else
+  else if
   {
     // alert("你猜小了")
     tag.innerHTML += "<p>" + i + ".你猜小了</p>";
+  }
+  else
+  {
+
   }
   i = i + 1;
 }
