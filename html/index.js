@@ -25,12 +25,12 @@ function myFunction()
     // alert("你猜的太小了")
     tag.innerHTML += "<p>" + i + ".你猜的太小了</p>";
   }
-  else
+  else if (shu < x)
   {
     // alert("你猜小了")
     tag.innerHTML += "<p>" + i + ".你猜小了</p>";
   }
-  if (shu == 50)
+  else if (shu == 50)
   {
       alert("成功率为50%")
   }
