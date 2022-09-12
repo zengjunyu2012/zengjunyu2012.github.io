@@ -30,26 +30,26 @@ function myFunction()
     // alert("你猜小了")
     tag.innerHTML += "<p>" + i + ".你猜小了</p>";
   }
-  // else if (shu == 50)
-  // {
-  //     alert("成功率为50%")
-  // }
-  // else if (shu == 75)
-  // {
-  //     alert("成功率为75%")
-  // }
-  // else if (shu < 75 and shu > 75)
-  // {
-  //     alert("成功率为90%")
-  // }
-  // else if (shu < 75)
-  // {
-  //     alert("成功率为99%到100%")
-  // }
-  // else if (shu > 75)
-  // {
-  //     alert("成功率为90到100%")
-  // }
-  else{}
+  // Bootstrap 与 JavaScript的合体版div
+  else if (shu == 50)
+  {
+        <div class="bar" style="width: 50%;">胜算:50%</div>
+  }
+  else if (shu == 75)
+  {
+        <div class="bar" style="width: 75%;">胜算:75%</div>
+  }
+  else if (shu > 75)
+   {
+        <div class="bar" style="width: 90%;">胜算:90%</div>
+   }
+  else if (shu < 75)
+  {
+        <div class="bar" style="width: 90%;">胜算:90%</div>
+        \
+        <div class="bar" style="width: 99%;">胜算:99%</div>
+        \
+        <div class="bar" style="width: 100%;">胜算:100%</div>
+   }
   i = i + 1;
 }
