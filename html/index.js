@@ -33,7 +33,7 @@ function myFunction()
   // Bootstrap 与 JavaScript的合体版div
   else if (shu == 50)
   {
-        <div class="bar" style="width: 50%;">胜算:50%</div>
+    <div class="bar" style="width: 50%;">胜算:50%</div>
   }
   else if (shu == 75)
   {
