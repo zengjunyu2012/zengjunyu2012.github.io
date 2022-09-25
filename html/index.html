@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>猜数游戏</title>
-<script src = "index.js"></script>
-<link href = "index.css" rel = "stylesheet">
-</head>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <div id="container">
 <div id="header">
 <h1>猜数</h1>
@@ -17,9 +17,14 @@
 <div id="content">
 <h2>输入你的数 （建议输入50，输入后成功率为50%）</h2>
 <input type="number" name="quantity" min = "1" max = "100" id = "shuzi">
-<button onclick="myFunction()">提交</button>
 </div>
 </div>
+<div class="btn-group">
+<button type="button" class="btn btn-default" onclick="myFunction()">提交</button>
+</div>
+<script src = "index.js"></script>
+<link href = "index.css" rel = "stylesheet">
+</head>
 <p id = "bijiaojieguo"></p>
 </body>
 </html>
